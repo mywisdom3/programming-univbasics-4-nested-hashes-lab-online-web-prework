@@ -35,7 +35,7 @@ def alan_kay_is_known_for
           :known_for => "Unix",
           :languages => ["C"]
         }
-       programmer_hash [:alan_kay, :known_for, :languages]
+       programmer_hash[:alan_kay, :known_for, :languages]
      }
      
      end
@@ -80,7 +80,7 @@ def adding_matz
           :known_for => "Unix",
           :languages => ["C"]
         }
-programmer_hash = {
+programmer_hash.unshift = {
           :yukihiro_matsumoto => {
             :known_for => "Ruby",
             :languages=> ["LISP", "C"]
@@ -105,6 +105,7 @@ def changing_alan
           :known_for => "Unix",
           :languages => ["C"]
         }
+  programmer_hash [:alan_kay][:known_for] = "GUI"
      }
      #change what Alan Kay is :known_for to the value of the alans_new_info variable. 
      alans_new_info = "GUI"
